@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Cartas</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <section class="game">
+    
+    <div class="carta" data-framework="nunchaku">
+      <img class="frente" src="https://digitalcabral.com/puc/svg/001-nunchaku.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="https://digitalcabral.com/puc/svg/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+    <div class="carta" data-framework="nunchaku">
+      <img class="frente" src="./img/001-nunchaku.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+
+    <div class="carta" data-framework="parachute">
+      <img class="frente" src="./img/002-parachute.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+    <div class="carta" data-framework="parachute">
+      <img class="frente" src="./img/002-parachute.svg" alt="Frente Carta - Parachute">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+
+    <div class="carta" data-framework="helmet">
+      <img class="frente" src="./img/003-helmet.svg" alt="Frente Carta - Parachute">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+    <div class="carta" data-framework="helmet">
+      <img class="frente" src="./img/003-helmet.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+
+    <div class="carta" data-framework="flipper">
+      <img class="frente" src="./img/004-Flipper.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+    <div class="carta" data-framework="flipper">
+      <img class="frente" src="./img/004-Flipper.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+
+    <div class="carta" data-framework="chairlift">
+      <img class="frente" src="./img/005-chairlift.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+    <div class="carta" data-framework="chairlift">
+      <img class="frente" src="./img/005-chairlift.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+
+    <div class="carta" data-framework="windsurf">
+      <img class="frente" src="./img/006-windsurf.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+    <div class="carta" data-framework="windsurf">
+      <img class="frente" src="./img/006-windsurf.svg" alt="Frente Carta - Nunchaku">
+      <img class="verso" src="./img/logo-puc-minas.svg" alt="Verso Carta - Logo PUC">
+    </div>
+  </section>
+  <section class="scoreboard">
+    <span id="pontos">0</span>
+    
+    <span id="tempo">Segundos: 0</span>
+  </section>
+
+  <input type="button" onclick="parar()" value="Parar tempo"/>
+  
+  <script src="./scripts.js"></script>
+</body>
+</html>

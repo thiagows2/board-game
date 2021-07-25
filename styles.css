@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.scoreboard {
+  width: 25%;
+  height: 40px;
+  margin: 16px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.scoreboard > #pontos {
+  padding: 8px 16px;
+  background-color: rgb(178, 153, 202);
+}
+
+.scoreboard > #tempo {
+  padding: 8px 16px;
+  background-color: rgb(178, 153, 202);
+}
+
+
+.carta {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;  
+  transform: scale(1);
+  transform-style: preserve-3d;  
+  box-shadow: 1px 1px 1px black;
+  transition: transform .5s;
+}
+
+.carta:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.carta.flip {
+  transform: rotateY(180deg);
+}
+
+.frente,
+.verso {
+  width: 100%;
+  height: 100%;
+  background: blueviolet;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.frente {
+  transform: rotateY(180deg);
+}
